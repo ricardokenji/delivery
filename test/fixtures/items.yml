@@ -1,0 +1,16 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  order_id: 1
+  external_code: MyString
+  name: MyString
+  price: 9.99
+  quantity: 
+  total: 9.99
+
+two:
+  external_code: MyString
+  name: MyString
+  price: 9.99
+  quantity: 
+  total: 9.99

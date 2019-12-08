@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  order_id: 1
+  external_code: MyString
+  name: MyString
+  email: MyString
+  contact: MyString
+
+two:
+  order_id: 1
+  external_code: MyString
+  name: MyString
+  email: MyString
+  contact: MyString
