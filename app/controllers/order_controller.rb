@@ -4,7 +4,7 @@ class OrderController < ApplicationController
 
     ProcessOrder.call(payload)
     
-    render :plain => {status: 'success'}, status: 200, content_type: 'application/json'
+    render json: {status: 'success'}, status: 200
   rescue ProcessOrderError => e
     render json: {
       error: e.message
