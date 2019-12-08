@@ -1,4 +1,3 @@
 Rails.application.routes.draw do
-  get 'order/create'
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  post 'order/create', to: 'order#create'
 end
