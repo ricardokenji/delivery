@@ -8,10 +8,13 @@ module DeliveryCenter
     def process(order)
       options = {
         body: order,
-        headers: {"X-Sent" => Time.now.strftime("%I\h%M %d/%m/%Y")}
+        headers: {
+          'X-Sent'=> Time.now.strftime("%I\h%M %d/%m/%Y"),
+          'Content-Type' => 'application/json'
+        }
       }
-      raise options.inspect
-      #self.class.post('https://delivery-center-recruitment-ap.herokuapp.com', options)
+      response = self.class.post("/", options)
+      raise response.inspect
     end
   end
 end

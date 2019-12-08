@@ -5,7 +5,7 @@ class OrderController < ApplicationController
     order_parser = get_parser_for_store_id(payload['store_id'])
     ProcessOrder.call(order_parser.parse(payload))
     
-    render :plain => order, status: 200, content_type: 'application/json'
+    render :plain => {status: 'success'}, status: 200, content_type: 'application/json'
   end
 
   private
