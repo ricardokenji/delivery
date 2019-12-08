@@ -22,6 +22,7 @@ module OrderParser
 
       payload_address = payload['shipping']['receiver_address']
       
+      order.status = :pending
       order.external_code = payload['id']
       order.store_id = payload['store_id']
       order.sub_total = payload['total_amount']
@@ -32,12 +33,12 @@ module OrderParser
       order.city = payload_address['city']['name']
       order.district = payload_address['neighborhood']['name']
       order.street = payload_address['address_line']
-      order.complement = payload_address['']
       order.latitude = payload_address['latitude']
       order.longitude = payload_address['longitude']
       order.dt_order_create = payload['date_created']
       order.postal_code = payload_address['zip_code']
-      order.number = payload['number']
+      order.number = payload_address['street_number']
+      order.complement = payload_address['comment']
       order
     end
 

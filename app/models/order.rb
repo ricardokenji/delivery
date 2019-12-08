@@ -1,4 +1,6 @@
 class Order < ApplicationRecord
+    enum status: {pending: "pending", processed: 'processed', error: 'error'}
+
     attribute :id, :integer
     attribute :external_code, :string
     attribute :store_id, :string
@@ -13,9 +15,10 @@ class Order < ApplicationRecord
     attribute :complement, :string
     attribute :latitude, :decimal
     attribute :longitude, :decimal
-    attribute :dt_order_create
+    attribute :dt_order_create, :datetime
     attribute :postal_code, :string
     attribute :number, :string
+    attribute :status, :string
 
     has_one :customer, autosave: true
     has_many :items, autosave: true

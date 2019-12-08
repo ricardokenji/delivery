@@ -14,7 +14,15 @@ module DeliveryCenter
         }
       }
       response = self.class.post("/", options)
-      raise response.inspect
+
+      handle_response(response)
+    end
+
+    private
+    def handle_response(response)
+      if(response.code != 200)
+        raise "API returned error: #{response.body}"
+      end
     end
   end
 end

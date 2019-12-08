@@ -23,7 +23,7 @@ class OrderSerializer < ActiveModel::Serializer
   end
 
   def dtOrderCreate
-    object.dt_order_create
+    object.dt_order_create.iso8601
   end
 
   def postalCode
