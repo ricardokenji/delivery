@@ -3,7 +3,6 @@ class ProcessOrder
     order.save()
     client = DeliveryCenter::Client.new
     json = ActiveModelSerializers::SerializableResource.new(order).to_json
-    puts json
     client.process(json)
     order.processed!
   rescue StandardError => error

@@ -1,11 +1,11 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  id: 2
-  externalCode: MyString
-  storeId: MyString
-  subTotal: 9.99
-  deliveryFee: 9.99
+  id: 1
+  external_code: MyString
+  store_id: MyString
+  sub_total: 9.99
+  delivery_fee: 9.99
   total: 9.99
   country: MyString
   state: MyString
@@ -15,16 +15,16 @@ one:
   complement: MyString
   latitude: 9.99
   longitude: 9.99
-  dtOrderCreate: 2019-12-08 01:22:48
-  postalCode: MyString
+  dt_order_create: 2019-12-08 01:22:48
+  postal_code: MyString
   number: MyString
 
 two:
   id: 2
-  externalCode: MyString
-  storeId: MyString
-  subTotal: 9.99
-  deliveryFee: 9.99
+  external_code: MyString
+  store_id: MyString
+  sub_total: 9.99
+  delivery_fee: 9.99
   total: 9.99
   country: MyString
   state: MyString
@@ -34,6 +34,6 @@ two:
   complement: MyString
   latitude: 9.99
   longitude: 9.99
-  dtOrderCreate: 2019-12-08 01:22:48
-  postalCode: MyString
+  dt_order_create: 2019-12-08 01:22:48
+  postal_code: MyString
   number: MyString

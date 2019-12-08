@@ -9,6 +9,7 @@ one:
   total: 9.99
 
 two:
+  order_id: 2
   external_code: MyString
   name: MyString
   price: 9.99

@@ -3,13 +3,16 @@
 one:
   order_id: 1
   external_code: MyString
-  name: MyString
+  first_name: MyString
+  last_name: MyString
   email: MyString
-  contact: MyString
+  phone_area_code: 99999999
+  phone_number: MyString
 
 two:
   order_id: 1
   external_code: MyString
-  name: MyString
-  email: MyString
-  contact: MyString
+  first_name: MyString
+  last_name: MyString
+  phone_area_code: 99999999
+  phone_number: MyString
