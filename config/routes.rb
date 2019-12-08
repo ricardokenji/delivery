@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  post 'order/create', to: 'order#create'
+  get 'order/create', to: 'order#create'
 end

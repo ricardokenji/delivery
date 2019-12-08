@@ -6,7 +6,7 @@ class CustomerSerializer < ActiveModel::Serializer
   end
 
   def name
-    "#{object.first_name} #{object.last_name}"
+    "#{object.first_name} #{object.last_name}".upcase
   end
 
   def contact

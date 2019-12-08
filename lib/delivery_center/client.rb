@@ -23,6 +23,7 @@ module DeliveryCenter
       if(response.code != 200)
         raise "API returned error: #{response.body}"
       end
+      response.body
     end
   end
 end
