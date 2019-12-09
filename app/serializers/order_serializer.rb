@@ -1,6 +1,7 @@
 class OrderSerializer < ActiveModel::Serializer
   attributes :externalCode, :storeId, :subTotal, :deliveryFee, :total, :country, :state, :city, 
-  :district, :street, :complement, :latitude, :longitude, :dtOrderCreate, :postalCode, :number
+  :district, :street, :complement, :latitude, :longitude, :dtOrderCreate, :postalCode, :number,
+  :total_shipping
 
   has_one :customer
   has_many :items
@@ -28,5 +29,9 @@ class OrderSerializer < ActiveModel::Serializer
 
   def postalCode
     object.postal_code
+  end
+
+  def total_shipping
+    object.delivery_fee
   end
 end
